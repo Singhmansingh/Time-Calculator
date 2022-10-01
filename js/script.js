@@ -66,8 +66,14 @@ document.addEventListener("keypress", (ev) => {
 
 var copy = document.getElementById("copy");
 
-use.addEventListener("click", () => {
+document.getElementsByClassName("control")[0].addEventListener("click", () => {
   let res = document.getElementById("output").textContent;
   inputs[0].value = res;
+  inputs[1].value = null;
+});
+
+document.getElementsByClassName("control")[0].addEventListener("click", () => {
+  document.getElementById("output").textContent = "00:00:00";
+  inputs[0].value = null;
   inputs[1].value = null;
 });
