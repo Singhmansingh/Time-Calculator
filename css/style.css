@@ -1,0 +1,85 @@
+html {
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    box-sizing: border-box;
+    color: white;
+    text-align: center;
+}
+
+*::before, *::after {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(40, 39, 56);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+#output {
+    display: block;
+    width: 100%;
+    font-size: 3em;
+    background-color: transparent;
+    border: none;
+    margin: 30px 0;
+    color: inherit;
+}
+
+button:hover, #output:hover, #use:hover{
+    opacity: 0.8;
+    cursor: pointer;
+
+}
+
+input {
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    background-color: rgb(248, 233, 255);
+    text-align: center;
+    font-size: 1.5em;
+}
+
+#form {
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+#form > * {
+    flex: 1;
+}
+
+label {
+    display: none;
+}
+
+#submit {
+    padding: 10px 30px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: rgb(106, 71, 122);
+    border: none;
+    color: white;
+    border-radius: 10px;
+    flex-basis: 100%;
+}
+
+#display {
+    display: flex;
+    align-items: center;
+}
+
+#output {
+    flex-grow: 1;
+}
+#use {
+    flex: 1;
+    font-size: 2em;
+    user-select: none ;
+}
